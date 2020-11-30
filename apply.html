@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aplicar</title>
+        <link href="style/bootstrap.css" rel="stylesheet" />
+        <link href="style/main.css" rel="stylesheet" />
+        <link href="style/font-awesome.css" rel="stylesheet" />
+        <link href="style/font-awesome.min.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="description" content="Descripción del sitio web" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row block-bg block-single">
+                <div class="col-md-12 block">
+                    <h1>Aplicar</h1>
+                    <hr/>
+                    <p>Aquí puede aplicar para Tuservidor.net</p>
+                    <form method="post">
+                        <label class="apply-label" for="type">¿A qué puesto le gustaría postularse?</label>
+                        <select name="type" class="form-control" required>
+                            <option value="developer">Desarrollador</option>
+							<option value="Staff">Personal</option>
+                            <option value="moderator">Moderador</option>
+                            <option value="supporter">Soporte</option>
+                            <option value="builder">Constructor</option>
+							<option value="youtuber">YouTuber [Min. 200 suscriptores]</option>
+		                    <option value="management">Gestión [Organización / Planificación]</option>
+                            <!-- MEHR? -->
+                        </select><br />
+                        <label class="apply-label" for="name">¿Cuál es su nombre?</label>
+                        <input type="text" class="form-control" name="name" placeholder="Tu nombre" required><br />
+                        
+                        <label class="apply-label" for="alter">¿Cuantos años tienes?</label>
+                        <input type="number" class="form-control" name="alter" placeholder="Tu edad" value="14" min="14" required><br />
+                        
+                        <label class="apply-label" for="description">¿Cual es tu nombre de usuario?</label>
+                        <textarea class="form-control" name="description" placeholder="Nombre de usuario"required></textarea><br />
+                        
+                        
+                        <label class="apply-label" for="references">Cuales son tus experiencias / referencias</label>
+                        <textarea class="form-control" name="references" placeholder="¿Qué has logrado hasta ahora?"required></textarea><br />
+                        
+						<label class="apply-label" for="references">¿Que tan activo eres?</label>
+                        <textarea class="form-control" name="references" placeholder="¿Cuánto juegas en el servidor?"required></textarea><br />
+						
+                        <label class="apply-label" for="references">¿Por qué Tuservidor.net?</label>
+                        <textarea class="form-control" name="references" placeholder="¿Por qué elegisteTuservidor.net?"required></textarea><br />
+                        
+                        <label class="apply-label" for="contact">¿Como podemos contactarlo? (Skype / Discord / Teamspeak / ...</label>
+                        <input type="text" class="form-control" name="contact" placeholder="Datos de contacto" required><br />
+                        
+                        <label class="apply-label" for="email">Tu correo electrónico</label>
+                        <input type="email" class="form-control" name="email" placeholder="Tu correo electrónico" required><br />
+                        
+                        <input type="submit" class="btn btn-primary" value="Apply">
+                    </form>
+                </div>
+            </div>
+        </div> 
+            
+    </body>
+</html>
